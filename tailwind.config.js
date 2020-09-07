@@ -1,4 +1,13 @@
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true
+  },
+
+  purge: {
+    layers: ['utilities']
+  },
+
   theme: {
     screens: {
       'sm': '576px',
