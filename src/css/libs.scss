@@ -1,9 +1,157 @@
 // @import '../../node_modules/magnific-popup/dist/magnific-popup';
-// @import '../../bower_components/arcticModal/arcticmodal/jquery.arcticmodal';
+@import '../../bower_components/arcticModal/arcticmodal/jquery.arcticmodal';
 
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
 
+$color-dark: #323545;
+$color-blue: #2DABF6;
 $root-font-size: 16;
 
 @function s($size) {
   @return $size / $root-font-size * 1rem;
 }
+
+.actions-slider-arrow {
+  color: #D0D2D8;
+  border: s(1) solid #D0D2D8;
+  transition: .3s;
+  cursor: pointer;
+  width: s(20);
+  flex-shrink: 0;
+
+  @media (min-width: 576px) {
+    width: s(40);
+  }
+  
+  @media (min-width: 768px) {
+    width: s(60);
+  }
+
+  &:hover {
+    color: $color-blue;
+    border: s(1) solid $color-blue;
+  }
+
+  &_left {
+    margin-right: s(10);
+
+    @media (min-width: 768px) {
+      margin-right: s(30);
+    }
+  }
+
+  &_right {
+    margin-left: s(10);
+
+    @media (min-width: 768px) {
+      margin-left: s(30);
+    }
+  }
+}
+
+.scrollbar-thumb {
+  background-color: $color-blue!important;
+  border-radius: 0!important;
+}
+
+.delivery-cities {
+  .scrollbar-thumb, .scrollbar-track-y {
+    width: s(4);
+  }
+}
+
+.reviews-slider {
+  margin-bottom: 0!important;
+}
+
+.reviews-slider-arrows {
+  max-width: s(450);
+  color: #D0D2D8;
+  position: relative;
+  margin-top: 1rem;
+  
+  @media (min-width: 992px) {
+    top: - s(28);
+    margin-top: 0;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: s(540);
+  }
+
+  .slick-dots {
+    position: static;
+    bottom: auto;
+    display: flex;
+    align-items: center;
+
+    li {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      margin-left: 0;
+      margin-right: 0;
+
+      button {
+        height: 0;
+        background-color: #D0D2D8;
+        width: 100%;
+        padding: s(1) 0;
+      }
+
+      &.slick-active {
+        button {
+          background-color: $color-blue;
+        }
+      }
+
+      button::before {
+        content: '';
+      }
+    }
+  }
+}
+
+.reviews-slider-arrow {
+  cursor: pointer;
+  transition: .3s;
+  font-size: s(12);
+  
+  @media (min-width: 576px) {
+    font-size: s(16);
+  }
+  
+  &:hover {
+    color: $color-blue
+  }
+
+  &_prev {
+    svg {
+      margin-right: .5rem;
+      flex-shrink: 0;
+    }
+  }
+
+  &_next {
+    svg {
+      margin-left: .5rem;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.reviews-dots {
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 40%;
+  display: flex;
+
+  @media (min-width: 576px) {
+    max-width: 55%;
+  }
+}
+

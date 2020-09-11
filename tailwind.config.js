@@ -1,11 +1,6 @@
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true
-  },
-
-  purge: {
-    layers: ['utilities']
   },
 
   theme: {
@@ -14,7 +9,6 @@ module.exports = {
       'md': '768px',
       'lg': '992px',
       'xl': '1200px',
-      'xxl': '1370px'
     },
 
     fontSize: {
@@ -34,12 +28,14 @@ module.exports = {
     colors: {
       'black': '#000000',
       'white': '#FFFFFF',
-      'dark': '#222327',
-      'dark2': '#303030',
-      'light-dark': '#282A2F',
-      'gray': '#747474',
-      'orange': '#FF9700',
-      'yellow': '#F1C600'
+      'dark': '#323545',
+      'dark-4c': '#4C4E5C',
+      'light-dark': '#616477',
+      'blue': '#2DABF6',
+      'gray': '#F5F6F6',
+      'dark-gray': '#949AA6',
+      'dark-gray-8': '#8B8E9C',
+      'transparent': 'transparent'
     }
 
   },
