@@ -29,12 +29,63 @@ $(document).ready(function () {
   });
 
 
+  $('.brands-carousel').flickity({
+    wrapAround: false,
+    cellAlign: 'left',
+    arrows: false
+  });
 
 
 
+  // если клик по кнопке без класса .active
+  const clickButtonNotActive = (buttonsWrap, menuSelector, entranceClass, existClass) => {
+    $(buttonsWrap).on('click', '[data-button]:not(.active)', function () {
+      // идентификатор
+      const elementData = $(this).data('button');
+      //убираем у ативных кнопок класс active
+      $(buttonsWrap + ' ' + '[data-button].active').removeClass('active');
+      // добавляем нажатой кнопке класс active
+      $(this).addClass('active');
+      // добавляем активным меню анимацию исчезания и убираем класс .active
+      $(menuSelector + '[data-menu].active').removeClass('active').fadeOut();
+      // добавляем меню с соответствующим идентификатором класс active
+      $(menuSelector + '[data-menu="'+elementData+'"]').addClass('active').fadeIn();
+
+      if ($('.mobile-menu').hasClass('active')) {
+        $('body').addClass('overflow-hidden');
+      }
 
 
+    });
+  };
+  // если клик по кнопке c классом .active
+  const clickButtonActive = (buttonsWrap, menuSelector, entranceClass, existClass) => {
+    $(buttonsWrap).on('click', '[data-button].active', function () {
+      // идентификатор
+      const elementData = $(this).data('button');
+      // убираем у нажатой кнопки класс active
+      $(this).removeClass('active');
+      // убираем у меню с соответствующим идентификатором класс active
+      $(menuSelector + '[data-menu="'+elementData+'"]').removeClass('active').fadeOut();
 
+      $('body').removeClass('overflow-hidden');
+
+    });
+  };
+
+  const switchMenus = (buttonsWrap, menuSelector) => {
+    clickButtonNotActive(buttonsWrap, menuSelector);
+    clickButtonActive(buttonsWrap, menuSelector);
+  };
+
+  //переключаем мобильные меню
+  switchMenus('.bottom-tools', '.mobile-menu');
+  // убираем прокрутку у body если меню открыто
+  // $('.bottom-tools__item[data-button]').on('click', function () {
+  //   if (!$('.mobile-menu').hasClass('active')) {
+  //     $('body').addClass('overflow-hidden');
+  //   } else $('body').removeClass('overflow-hidden');
+  // });
 
 
 

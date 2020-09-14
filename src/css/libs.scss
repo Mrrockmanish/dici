@@ -4,6 +4,9 @@
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 @import "../../node_modules/slick-carousel/slick/slick-theme.scss";
 
+@import"../../node_modules/flickity/dist/flickity";
+
+
 $color-dark: #323545;
 $color-blue: #2DABF6;
 $root-font-size: 16;
@@ -154,4 +157,108 @@ $root-font-size: 16;
     max-width: 55%;
   }
 }
+
+.brands-carousel {
+  height: s(277);
+  width: 3000px;
+
+  .flickity-viewport {
+    width: 100%;
+  }
+
+  .brand-item {
+    width: s(277);
+    height: s(277);
+
+    &__inner {
+      border: s(2) solid #DBDBDB;
+      border-radius: s(3);
+      width: s(277);
+      height: s(277);
+    }
+
+    &__bg-block {
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .flickity-page-dots {
+    display: flex;
+    margin-left: s(125);
+    bottom: - s(52);
+    max-width: s(280);
+
+    @media (min-width: 768px) {
+      max-width: s(345);
+    }
+
+    li {
+      display: flex;
+      flex-grow: 1;
+    }
+  }
+
+  .flickity-page-dots .dot {
+    @media (max-width: 575.9px) {
+      display: none;
+    }
+
+    background-color: #D0D2D8;
+    height: s(2);
+    opacity: 1;
+    border-radius: 0;
+    margin: 0;
+
+    &.is-selected {
+      background-color: #2DABF6;
+    }
+  }
+
+  .flickity-button:disabled {
+    opacity: 1;
+    color: #D0D2D8;
+  }
+
+  .flickity-prev-next-button {
+    @media (max-width: 575.9px) {
+        display: none;
+    }
+
+    top: 118%;
+    color: #D0D2D8;
+
+    &:hover {
+      color: #2DABF6;
+    }
+
+    &.previous {
+      left: 0;
+
+      &::after {
+        content: 'Пред.';
+        display: flex;
+        margin-left: s(40);
+      }
+    }
+
+    &.next {
+      left: 480px;
+
+      @media (min-width: 768px) {
+        left: 555px;
+      }
+
+      &::after {
+        content: 'След.';
+        display: flex;
+        margin-left: - s(40);
+      }
+    }
+  }
+
+}
+
+
+
 

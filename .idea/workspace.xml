@@ -20,27 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ffda790-5fbb-4504-8992-8c91028c94d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fonts/Manrope-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Manrope-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Manrope-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Manrope-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Manrope-Semibold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Manrope-Semibold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Manrope-Semibold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Manrope-Semibold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/bottom-tools.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/fonts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/libs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/libs.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/libs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/libs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/bottom-tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/bottom-tools.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/mobile-nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/mobile-nav.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/proj/иконочки" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../electroholding" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -88,7 +79,11 @@
       <workItem from="1599451138624" duration="1303000" />
       <workItem from="1599452502889" duration="25331000" />
       <workItem from="1599760989647" duration="651000" />
-      <workItem from="1599761661402" duration="33209000" />
+      <workItem from="1599761661402" duration="34146000" />
+      <workItem from="1599858412803" duration="63000" />
+      <workItem from="1599858692801" duration="15000" />
+      <workItem from="1599858846217" duration="14000" />
+      <workItem from="1600093920944" duration="20894000" />
     </task>
     <task id="LOCAL-00001" summary="upgrade package.json">
       <created>1599453174374</created>
@@ -97,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599453174374</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="свёрстана главная до блока blog">
+      <created>1599852895156</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599852895156</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,21 +119,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="upgrade package.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="upgrade package.json" />
+    <MESSAGE value="свёрстана главная до блока blog" />
+    <option name="LAST_COMMIT_MESSAGE" value="свёрстана главная до блока blog" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1416" y="588" key="FileChooserDialogImpl" timestamp="1599487843632">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state x="1414" y="588" key="FileChooserDialogImpl" timestamp="1600122145330">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
+    <state x="1414" y="588" key="FileChooserDialogImpl/0.0.1856.1080/1920.0.1440.860@0.0.1856.1080" timestamp="1600122145330" />
     <state x="1416" y="588" key="FileChooserDialogImpl/0.0.1858.1080/1920.0.1440.860@0.0.1858.1080" timestamp="1599487843632" />
     <state x="349" y="86" key="SettingsEditor" timestamp="1599453097112">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="349" y="86" key="SettingsEditor/0.0.1858.1080/1920.0.1440.860@0.0.1858.1080" timestamp="1599453097112" />
-    <state x="520" y="270" key="Vcs.Push.Dialog.v2" timestamp="1599453177761">
+    <state x="520" y="270" key="Vcs.Push.Dialog.v2" timestamp="1599852896998">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="520" y="270" key="Vcs.Push.Dialog.v2/0.0.1858.1080/1920.0.1440.860@0.0.1858.1080" timestamp="1599453177761" />
+    <state x="520" y="270" key="Vcs.Push.Dialog.v2/0.0.1858.1080/1920.0.1440.860@0.0.1858.1080" timestamp="1599852896998" />
     <state x="592" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1599845043681">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
