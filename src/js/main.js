@@ -35,7 +35,7 @@ $(document).ready(function () {
     arrows: false
   });
 
-
+  Scrollbar.init(document.querySelector('.merit-items'), {});
 
   // если клик по кнопке без класса .active
   const clickButtonNotActive = (buttonsWrap, menuSelector, entranceClass, existClass) => {
@@ -51,10 +51,16 @@ $(document).ready(function () {
       // добавляем меню с соответствующим идентификатором класс active
       $(menuSelector + '[data-menu="'+elementData+'"]').addClass('active').fadeIn();
 
-      if ($('.mobile-menu').hasClass('active')) {
+      //если меню это мобильное меню то добавляем прокрутку у body
+      if (menuSelector === '.mobile-menu' &&  $(menuSelector).hasClass('active')) {
         $('body').addClass('overflow-hidden');
       }
 
+      //если меню это блок с табами на телефоне, то добавляем контенту красивый скролл
+      if (menuSelector === '.merit__content') {
+        const content = $(menuSelector + '[data-menu="'+elementData+'"]').find('.merit-items')[0];
+        Scrollbar.init(content, {});
+      }
 
     });
   };
@@ -68,7 +74,10 @@ $(document).ready(function () {
       // убираем у меню с соответствующим идентификатором класс active
       $(menuSelector + '[data-menu="'+elementData+'"]').removeClass('active').fadeOut();
 
-      $('body').removeClass('overflow-hidden');
+      //если меню это мобильное меню то убираем прокрутку у body
+      if (menuSelector === '.mobile-menu') {
+        $('body').removeClass('overflow-hidden');
+      }
 
     });
   };
@@ -80,22 +89,12 @@ $(document).ready(function () {
 
   //переключаем мобильные меню
   switchMenus('.bottom-tools', '.mobile-menu');
-  // убираем прокрутку у body если меню открыто
-  // $('.bottom-tools__item[data-button]').on('click', function () {
-  //   if (!$('.mobile-menu').hasClass('active')) {
-  //     $('body').addClass('overflow-hidden');
-  //   } else $('body').removeClass('overflow-hidden');
-  // });
 
+  switchMenus('.merit__img', '.merit__content');
 
-
-
-
-
-
-
-
-
-
+  //модалка обратного звонка
+  $('.call').on('click', () => {
+    $('#form-modal').arcticmodal();
+  })
 
 });

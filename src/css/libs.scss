@@ -259,6 +259,38 @@ $root-font-size: 16;
 
 }
 
+.merit-items {
+  .scroll-content {
+    @media (min-width: 768px) {
+      padding-bottom: s(100);
+    }
+  }
+}
 
+#form-modal {
+  width: s(288);
 
+  @media (min-width: 375px) {
+    width: s(343);
+  }
 
+  @media (min-width: 576px) {
+    width: s(544);
+  }
+
+  @media (min-width: 768px) {
+    width: s(736);
+  }
+
+  @media (min-width: 992px) {
+    width: s(960);
+  }
+
+  @media (min-width: 1200px) {
+    width: s(1000);
+  }
+}
+
+.arcticmodal-container_i2 {
+  padding: 16px;
+}
