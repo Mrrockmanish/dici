@@ -87,6 +87,30 @@ section:not(.promo) {
     @media (min-width: 1200px) {
         width: s(111);
     }
+
+    &_header {
+
+        @media (min-width: 992px) {
+            margin-right: auto;
+        }
+
+        @media (min-width: 1200px) {
+            margin-right: s(63);
+        }
+    }
+}
+
+.city-select {
+    font-size: s(13);
+    margin-left: auto;
+
+    @media (min-width: 992px) {
+        margin-right: auto;
+    }
+
+    @media (min-width: 1200px) {
+        margin-right: s(35);
+    }
 }
 
 
@@ -94,7 +118,17 @@ section:not(.promo) {
     font-size: s(13);
 
     &__search {
-        width: s(430);
+        width: s(434);
+
+        @media (min-width: 992px) {
+            margin-right: auto;
+            width: s(300);
+        }
+
+        @media (min-width: 1200px) {
+            margin-right: s(30);
+            width: s(434);
+        }
     }
 
     &__menu {
@@ -106,6 +140,14 @@ section:not(.promo) {
         transition: .3s;
         padding-left: s(8);
         padding-right: s(8);
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
 
         &.active {
             color: $color-dark;
@@ -263,6 +305,12 @@ section:not(.promo) {
     &_textarea {
         height: s(190);
         resize: none;
+    }
+
+    &_h {
+        &_2rem {
+            height: s(32);
+        }
     }
 }
 
@@ -746,6 +794,31 @@ h5 {
         border-top: s(1) solid #E4E4E4;
         border-bottom: s(1) solid #E4E4E4;
     }
+
+    &__col {
+        &_mr {
+            &-47px {
+                @media (min-width: 1200px) {
+                    margin-right: s(47);
+                }
+            }
+
+            &-139px {
+                @media (min-width: 1200px) {
+                    margin-right: s(139);
+                }
+            }
+
+            &-149px {
+                @media (min-width: 1200px) {
+                    margin-right: s(149);
+                }
+            }
+
+        }
+    }
+
+
 }
 
 .copyright {
