@@ -847,25 +847,14 @@ h5 {
 
 .merit {
     background-color: #00030D;
+    padding-bottom: s(30);
+
+    @media (min-width: 768px) {
+        padding-bottom: s(60);
+    }
 
     &__desc {
         max-width: s(530);
-    }
-
-    &__inner {
-        @media (min-width: 768px) {
-            height: s(1090);
-        }
-    }
-
-    &__content {
-        @media (min-width: 768px) {
-            display: none;
-        }
-
-        &.active {
-            display: block;
-        }
     }
 
     &__img {
@@ -900,6 +889,19 @@ h5 {
 }
 
 .merit-item {
+    color: #5e5f66;
+    cursor: pointer;
+
+    &.active {
+        color: white;
+        cursor: auto;
+    }
+    
+    @media (max-width: 767.9px) {
+        color: white!important;
+        cursor: auto;
+    }
+
     @media (min-width: 1200px) {
         max-width: s(560);
     }
@@ -908,41 +910,38 @@ h5 {
 .merit-items {
     position: relative;
     z-index: 0;
-    
-    @media (min-width: 768px) {
-        height: s(810);
-    }
 
-    &::before {
-        content: '';
-        width: 100%;
-        display: none;
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: s(305);
-        z-index: 1;
-        background: linear-gradient(180deg, #00030D, rgba(0, 3, 13, 0) 95.98%);
 
-        @media (min-width: 768px) {
-            display: block;
-        }
-    }
-    &::after {
-        content: '';
-        width: 100%;
-        display: none;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: s(260);
-        z-index: 1;
-        background: linear-gradient(to top, #00030D, rgba(0, 3, 13, 0) 95.98%);
-
-        @media (min-width: 768px) {
-            display: block;
-        }
-    }
+    //&::before {
+    //    content: '';
+    //    width: 100%;
+    //    display: none;
+    //    position: absolute;
+    //    left: 0;
+    //    top: 0;
+    //    height: s(305);
+    //    z-index: 1;
+    //    background: linear-gradient(180deg, #00030D, rgba(0, 3, 13, 0) 95.98%);
+    //
+    //    @media (min-width: 768px) {
+    //        display: block;
+    //    }
+    //}
+    //&::after {
+    //    content: '';
+    //    width: 100%;
+    //    display: none;
+    //    position: absolute;
+    //    left: 0;
+    //    bottom: 0;
+    //    height: s(260);
+    //    z-index: 1;
+    //    background: linear-gradient(to top, #00030D, rgba(0, 3, 13, 0) 95.98%);
+    //
+    //    @media (min-width: 768px) {
+    //        display: block;
+    //    }
+    //}
 }
 
 .modal {

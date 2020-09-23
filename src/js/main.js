@@ -35,7 +35,6 @@ $(document).ready(function () {
     arrows: false
   });
 
-  Scrollbar.init(document.querySelector('.merit-items'), {});
 
   // если клик по кнопке без класса .active
   const clickButtonNotActive = (buttonsWrap, menuSelector, entranceClass, existClass) => {
@@ -57,10 +56,10 @@ $(document).ready(function () {
       }
 
       //если меню это блок с табами на телефоне, то добавляем контенту красивый скролл
-      if (menuSelector === '.merit__content') {
-        const content = $(menuSelector + '[data-menu="'+elementData+'"]').find('.merit-items')[0];
-        Scrollbar.init(content, {});
-      }
+      // if (menuSelector === '.merit__content') {
+      //   const content = $(menuSelector + '[data-menu="'+elementData+'"]').find('.merit-items')[0];
+      //   Scrollbar.init(content, {});
+      // }
 
     });
   };
@@ -90,11 +89,19 @@ $(document).ready(function () {
   //переключаем мобильные меню
   switchMenus('.bottom-tools', '.mobile-menu');
 
-  switchMenus('.merit__img', '.merit__content');
 
   //модалка обратного звонка
   $('.call').on('click', () => {
     $('#form-modal').arcticmodal();
   })
+
+  //переключение камер телефона
+  $('.merit').on('click', '[data-switch]:not(.active)', function (){
+    const elementData = $(this).data('switch');
+    console.log(elementData);
+    $('[data-switch].active').removeClass('active');
+    $('[data-switch="'+ elementData +'"]').addClass('active');
+  });
+
 
 });
