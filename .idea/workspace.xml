@@ -21,9 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7ffda790-5fbb-4504-8992-8c91028c94d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/libs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/libs.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +87,8 @@
       <workItem from="1600165466010" duration="17070000" />
       <workItem from="1600254462671" duration="73000" />
       <workItem from="1600860146525" duration="347000" />
-      <workItem from="1600860513466" duration="6942000" />
+      <workItem from="1600860513466" duration="8284000" />
+      <workItem from="1600940088042" duration="3958000" />
     </task>
     <task id="LOCAL-00001" summary="upgrade package.json">
       <created>1599453174374</created>
@@ -122,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600864873754</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="внесены правки">
+      <created>1600868420580</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600868420580</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +156,8 @@
     <MESSAGE value="сделаны бренды, футер, мобильное меню" />
     <MESSAGE value="верстка главной готова" />
     <MESSAGE value="обновил футер и хэдер" />
-    <option name="LAST_COMMIT_MESSAGE" value="обновил футер и хэдер" />
+    <MESSAGE value="внесены правки" />
+    <option name="LAST_COMMIT_MESSAGE" value="внесены правки" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="455" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600860461233">
@@ -162,12 +173,12 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="349" y="86" key="SettingsEditor/0.0.1858.1080/1920.0.1440.860@0.0.1858.1080" timestamp="1599453097112" />
-    <state x="944" y="360" key="Vcs.Push.Dialog.v2" timestamp="1600864875776">
+    <state x="944" y="360" key="Vcs.Push.Dialog.v2" timestamp="1600868422483">
       <screen x="0" y="0" width="3376" height="1440" />
     </state>
     <state x="519" y="270" key="Vcs.Push.Dialog.v2/0.0.1856.1080/1920.0.1440.860@0.0.1856.1080" timestamp="1600195919303" />
     <state x="520" y="270" key="Vcs.Push.Dialog.v2/0.0.1858.1080/1920.0.1440.860@0.0.1858.1080" timestamp="1599852896998" />
-    <state x="944" y="360" key="Vcs.Push.Dialog.v2/0.0.3376.1440@0.0.3376.1440" timestamp="1600864875776" />
+    <state x="944" y="360" key="Vcs.Push.Dialog.v2/0.0.3376.1440@0.0.3376.1440" timestamp="1600868422483" />
     <state x="592" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1599845043681">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
